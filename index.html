@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <input class="display-hasil" type="text" id="count" disabled/ placeholder="0">
+        </div>
+        <div class="btnMain">
+            <button type="button" class="btn-count operator" id="btn-hapus" value="" onclick="darkMode()">[x]</button>
+            <button type="button" class="btn-count operator" id="btn-reset" value="" onclick="reset()">C</button>
+            <button type="button" class="btn-count operator" id="btn-persent" value="%" onclick="display('1/100')">%</button>
+            <button type="button" class="btn-count operator" id="btn-bagi" value="/" onclick="display('/')">/</button>
+            <!-- ======================================================================================= -->
+            <button type="button" class="btn-count" id="btn-count btn-7" value="7" onclick="display('7')">7</button>
+            <button type="button" class="btn-count" id="btn-8" value="8" onclick="display('8')">8</button>
+            <button type="button" class="btn-count" id="btn-9" value="9" onclick="display('9')">9</button>
+            <button type="button" class="btn-count operator" id="btn-kali" value="*" onclick="display('*')">*</button>
+            <!-- ====================================================================================== -->
+            <button type="button" class="btn-count" id="btn-4" value="4" onclick="display('4')">4</button>
+            <button type="button" class="btn-count" id="btn-5" value="5" onclick="display('5')">5</button>
+            <button type="button" class="btn-count" id="btn-6" value="6" onclick="display('6')">6</button>
+            <button type="button" class="btn-count operator" id="btn-kurang" value="-" onclick="display('-')">-</button>
+            <!-- ====================================================================================== -->
+            <button type="button" class="btn-count" id="btn-1" value="1" onclick="display('1')">1</button>
+            <button type="button" class="btn-count" id="btn-2" value="2" onclick="display('2')">2</button>
+            <button type="button" class="btn-count" id="btn-3" value="3" onclick="display('3')">3</button>
+            <button type="button" class="btn-count operator" id="btn-tambah" value="+" onclick="display('+')">+</button>
+            <!-- ====================================================================================== -->
+            <button type="button" class="btn-count" id="btn-ratusan" value="00" onclick="display('00')">00</button>
+            <button type="button" class="btn-count" id="btn-nol" value="0" onclick="display('0')">0</button>
+            <button type="button" class="btn-count" id="btn-koma" value="." onclick="display('.')">,</button>
+            <button type="button" class="btn-count hasil" id="btn-hasil" value="=" onclick="hasil()">=</button>
+            <!-- ====================================================================================== -->
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
