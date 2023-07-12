@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>kalkulator</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
         <div class="header">
             <input class="display-hasil" type="text" id="count" disabled/ placeholder="0">
         </div>
         <div class="btnMain">
-            <button type="button" class="btn-count operator" id="btn-hapus" value="" onclick="darkMode()">[x]</button>
             <button type="button" class="btn-count operator" id="btn-reset" value="" onclick="reset()">C</button>
-            <button type="button" class="btn-count operator" id="btn-persent" value="%" onclick="display('1/100')">%</button>
+            <button type="button" class="btn-count operator" id="btn-hapus" value="" onclick="hapus()">Del</button>
+            <button type="button" class="btn-count operator" id="btn-persent" value="%"
+                onclick="display('%')">%</button>
             <button type="button" class="btn-count operator" id="btn-bagi" value="/" onclick="display('/')">/</button>
             <!-- ======================================================================================= -->
             <button type="button" class="btn-count" id="btn-count btn-7" value="7" onclick="display('7')">7</button>
@@ -37,9 +40,10 @@
             <button type="button" class="btn-count" id="btn-koma" value="." onclick="display('.')">,</button>
             <button type="button" class="btn-count hasil" id="btn-hasil" value="=" onclick="hasil()">=</button>
             <!-- ====================================================================================== -->
-            
+
         </div>
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>
